@@ -16,7 +16,7 @@ function Register() {
     }
     async function register() {
         console.log(username, password, email);
-        fetch('http://localhost:3001/register',fetchContent)
+        fetch('https://e-shop-tw.herokuapp.com/register',fetchContent)
         .then((res) => res.json())
         .then((status) => console.log(status))
         .then(() => alert('successful'))
