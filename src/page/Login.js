@@ -28,7 +28,7 @@ function Login() {
       (
         localStorage.setItem('user', JSON.stringify(status)),
         dispatch(login(JSON.parse(localStorage.getItem('user')))),
-        navigate('/')
+        navigate('/E-shop-client/')
       )
       : alert('Sorry invalid'))
     .catch((err) => console.log(err))

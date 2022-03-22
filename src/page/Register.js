@@ -20,7 +20,7 @@ function Register() {
         .then((res) => res.json())
         .then((status) => console.log(status))
         .then(() => alert('successful'))
-        .then(() => navigate('/login'))
+        .then(() => navigate('/E-shop-client/login'))
         .catch((error) => console.log(error))
     }
     return (
