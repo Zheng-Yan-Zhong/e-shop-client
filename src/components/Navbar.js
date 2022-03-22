@@ -15,7 +15,7 @@ function Navbar({ authUser, theme }) {
     const dispatch = useDispatch()
     return (
         <div className={`navbar ${(theme.bgc === "white" ? "lightMode" : "darkMode") }`}>
-            <Link to="/"><span className='logo'>E-Shop</span></Link>
+            <Link to="/E-shop-client"><span className='logo'>E-Shop</span></Link>
             {JSON.parse(localStorage.getItem('user')) ? 
             (<ul className='list'>
                 <li className='list-item'>
@@ -23,11 +23,11 @@ function Navbar({ authUser, theme }) {
                 </li>
                 <li className='list-item'>{authUser.username}</li>
                 <li className='list-item' onClick={() => clearStorage()} >Logout</li>
-                <li className='list-item'><Link to="/cart"><AiOutlineShoppingCart/></Link></li>
+                <li className='list-item'><Link to="/E-shop-client/cart"><AiOutlineShoppingCart/></Link></li>
                 {theme.bgc === "white" ? <li className='list-item' onClick={() => dispatch(darkMode())}><MdOutlineDarkMode /></li>
                 : <li className='list-item' onClick={() => dispatch(lightMode())}><MdOutlineLightMode /></li>}
             </ul>) : 
-            (<div><Link to="/login">Login</Link></div>)}
+            (<div><Link to="/E-shop-client/login">Login</Link></div>)}
         </div>
     )
 }

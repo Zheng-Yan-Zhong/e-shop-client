@@ -53,7 +53,7 @@ function Login() {
           <input type="text" onChange={(e) => setUserName(e.target.value)} placeholder="username" value={username} />
           <input type="text" onChange={(e) => setPassWord(e.target.value)} placeholder="password" value={password} />
           <button onClick={loginMethod}>login</button>
-          <Link to="/register">Not have account? click - register</Link>
+          <Link to="/E-shop-client/register">Not have account? click - register</Link>
         </div>
       </div>
     </div>)

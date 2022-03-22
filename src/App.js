@@ -26,10 +26,10 @@ function App() {
             <div>
                 <Navbar theme={theme} authUser={authUser} />
                 <Routes>
-                    <Route exact path="/" element={<Home />} />
-                    <Route path="/login"  element={<Login />} />
-                    <Route path="/register" element={<Register />} />
-                    <Route path="/cart" element={<Cart />} />
+                    <Route exact path="/E-shop-client/" element={<Home />} />
+                    <Route path="/E-shop-client/login"  element={<Login />} />
+                    <Route path="/E-shop-client/register" element={<Register />} />
+                    <Route path="/E-shop-client/cart" element={<Cart />} />
                 </Routes>
             </div>   
         </Router>
